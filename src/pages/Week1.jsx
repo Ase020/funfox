@@ -12,6 +12,7 @@ import {
   pencil,
   pulp,
   ruler,
+  weekTag,
 } from "../assets";
 import { CloudCard } from "../components";
 
@@ -46,11 +47,16 @@ const cloudData = [
 const Week1 = () => {
   return (
     <div className="w-[calc(100%-112px)] h-[694px] rounded-[20px] mx-auto bg-white p-5 flex flex-col items-center justify-center gap-2.5">
+      {/* Week tag */}
+      <div className="absolute top-2 left-32">
+        <img src={weekTag} alt="week-tag" className="" />
+      </div>
+
       <h3 className="text-center bg-pink-dark text-white text-32 leading-9 py-2 px-4 rounded-3xl border-4 border-pink-primary border-dashed shadow-xl">
         Elements of Story Writing
       </h3>
 
-      <p className="w-full text-2xl ">
+      <p className="w-full text-2xl">
         Welcome to term 2 of Writers Club. Are you excited for this amazing
         journey? Over the next week, we will be practicing the different
         elements of story writing. Our aim is to make stories more interesting

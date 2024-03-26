@@ -12,6 +12,7 @@ import pulp from "./pulp.svg";
 import question from "./question.svg";
 import ruler from "./ruler.svg";
 import greenBook from "./green-book.svg";
+import weekTag from "./week-tag.png";
 
 import cloud1 from "./cloud-1.svg";
 import cloud2 from "./cloud-2.svg";
@@ -33,6 +34,7 @@ export {
   profile,
   pulp,
   question,
+  weekTag,
   ruler,
   cloud1,
   cloud2,
