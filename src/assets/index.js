@@ -20,6 +20,9 @@ import cloud3 from "./cloud-3.svg";
 import cloud4 from "./cloud-4.svg";
 import cloud5 from "./cloud-5.svg";
 
+import coldRainy from "./cold-rainy-day.png";
+import sunnyBeach from "./sunny-beach.png";
+
 export {
   arrowDown,
   arrowLeft,
@@ -41,4 +44,6 @@ export {
   cloud3,
   cloud4,
   cloud5,
+  coldRainy,
+  sunnyBeach,
 };

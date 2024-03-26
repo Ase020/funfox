@@ -1,15 +1,19 @@
 import { useState } from "react";
 import { ArrowRight, arrowLeft, options, profile } from "../assets";
+import { useNavigate } from "react-router-dom";
 
 const Footer = () => {
   const [page, setPage] = useState(1);
+  const navigate = useNavigate();
 
   const handlePrev = () => {
     page > 1 ? setPage((prev) => prev - 1) : 1;
+    navigate(`/week-${page - 1}`);
   };
 
   const handleNext = () => {
     page <= 4 ? setPage((prev) => prev + 1) : 1;
+    navigate(`/week-${page + 1}`);
   };
 
   return (
