@@ -8,6 +8,7 @@ import hat from "./hat.svg";
 import options from "./options.svg";
 import pencil from "./pencil.svg";
 import profile from "./profile.svg";
+import pulpMobile from "./pulp-mobile.svg";
 import pulp from "./pulp.svg";
 import question from "./question.svg";
 import ruler from "./ruler.svg";
@@ -40,6 +41,7 @@ export {
   pencil,
   profile,
   pulp,
+  pulpMobile,
   question,
   weekTag,
   ruler,
