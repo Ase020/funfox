@@ -7,6 +7,9 @@ export default {
         bgCover: "url('/wk1-bg.png')",
       },
       colors: {
+        modal: {
+          parent: "#6C5D4A",
+        },
         purple: {
           primary: "#CD3F97",
         },

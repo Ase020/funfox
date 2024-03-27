@@ -13,6 +13,9 @@ import question from "./question.svg";
 import ruler from "./ruler.svg";
 import greenBook from "./green-book.svg";
 import weekTag from "./week-tag.png";
+import home from "./home.svg";
+import clock from "./clock.svg";
+import cancel from "./cancel.svg";
 
 import cloud1 from "./cloud-1.svg";
 import cloud2 from "./cloud-2.svg";
@@ -29,6 +32,7 @@ export {
   ArrowRight,
   bag,
   book,
+  cancel,
   child,
   greenBook,
   hat,
@@ -46,4 +50,6 @@ export {
   cloud5,
   coldRainy,
   sunnyBeach,
+  clock,
+  home,
 };

@@ -1,10 +1,12 @@
 import { useState } from "react";
 import { ArrowRight, arrowLeft, options, profile } from "../assets";
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 
 const Footer = () => {
-  const [page, setPage] = useState(1);
   const navigate = useNavigate();
+  const { pathname } = useLocation();
+  const week = parseInt(pathname.split("-")[1]) || 1;
+  const [page, setPage] = useState(week);
 
   const handlePrev = () => {
     page > 1 ? setPage((prev) => prev - 1) : 1;
@@ -38,10 +40,10 @@ const Footer = () => {
 
         <select
           className="ring-2 ring-white bg-purple-primary h-full text-white px-4 rounded-xl outline-none"
-          id=""
-          defaultValue={1}
           value={page}
-          onChange={(e) => setPage(e.target.value)}
+          onChange={(e) => {
+            setPage(e.target.value);
+          }}
         >
           <option value={1}>1</option>
           <option value={2}>2</option>
